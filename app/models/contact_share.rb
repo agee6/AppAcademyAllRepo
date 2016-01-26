@@ -1,4 +1,6 @@
 class ContactShare < ActiveRecord::Base
-  belongs_to :contact
+  validates :contact_id, presence: true
+  validates :user_id, presence: true, uniqueness: {scope: :contact_id}
+  belongs_to :contact, dependent: :destroy
   belongs_to :user
 end

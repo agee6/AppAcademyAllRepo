@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :users
+
+  resources :contact_shares, only: :destroy
+  resources :users do
+    resources :contacts
+  end
+
+
   #
   #  post 'users' => 'users#create'
   #  get 'users/:id/edit' => 'users#new'
