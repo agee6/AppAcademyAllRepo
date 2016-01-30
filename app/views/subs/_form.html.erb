@@ -1,0 +1,19 @@
+<% url = sub.id ? sub_url : subs_url %>
+<% submit_str = sub.id ? "Update" : "Create" %>
+<% method = sub.id ? "PATCH" : "POST" %>
+
+<form action="<%=url%>" method="POST">
+  <input type="hidden" name="_method" value="<%=method%>" />
+  <%= auth_token %>
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="sub[title]" value="<%= sub.title %>"/>
+  <br>
+
+  <label for="description">Description:</label>
+  <textarea
+    value="<%=sub.description%>"
+    id="description"
+    name="sub[description]" cols="20" rows="8"><%=sub.description%></textarea>
+  <input type="submit" value="<%= submit_str %>" />
+</form>
