@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: users
@@ -55,4 +56,11 @@ class User < ActiveRecord::Base
   end
 
 
+=======
+class User < ActiveRecord::Base
+  validates :username, presence: true
+  has_many :contacts, dependent: :destroy
+  has_many :contact_shares, dependent: :destroy
+  has_many :shared_contacts, through: :contact_shares, source: :contact
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 end

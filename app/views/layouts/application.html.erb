@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <title>RedditClone</title>
+=======
+  <title>Lol</title>
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<<<<<<< HEAD
 <% if current_user %>
   <%= button_to 'Logout', session_destroy_url, method: :delete %>
 <% else %>
@@ -17,6 +22,8 @@
 
 <p><%= flash.notice %></p>
 
+=======
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 <%= yield %>
 
 </body>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: users
@@ -10,5 +11,7 @@
 #  updated_at      :datetime         not null
 #
 
+=======
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 module UsersHelper
 end

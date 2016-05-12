@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
+<<<<<<< HEAD
 
+=======
+gem 'addressable'
+
+gem 'rest-client'
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
@@ -24,7 +30,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 gem 'bcrypt', '~> 3.1.7'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -32,6 +42,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+<<<<<<< HEAD
 gem 'pry-rails'
 gem 'annotate' 
 group :development, :test do
@@ -42,6 +53,11 @@ group :development, :test do
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'faker'
+=======
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
 end
 
 group :development do

@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+<<<<<<< HEAD
 user_arr = []
 5.times do
   user_arr << User.create(email: Faker::Internet.email, password: "password" )
@@ -25,3 +26,5 @@ end
     author_id: user_arr.sample.id
   )
 end 
+=======
+>>>>>>> df507360b6b87b8b4b69fe0523f2dca32d06e03e
